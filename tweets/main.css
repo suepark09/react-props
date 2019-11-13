@@ -1,0 +1,24 @@
+#tweetsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.tweet-container {
+    border: solid 1px lightgrey;
+    padding: 18px;
+    margin: 15px;
+    width: 450px
+}
+
+.tweet-text {
+    padding-top: 10px;
+}
+
+.metrics-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.metric-item {
+    padding-right: 10px;
+}

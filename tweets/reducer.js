@@ -38,9 +38,6 @@ const initialState = [
 ]
 ;
 
-const reducer = (state = initialState, action) => {
-    // Handle actions here - make sure you don't mutate the state!
-    const { type } = action;
 
     const reducer = (state = initialState, action) => {
         // Handle actions here - make sure you don't mutate the state!
@@ -53,5 +50,3 @@ const reducer = (state = initialState, action) => {
         return state;
     }
     
-    return state;
-}

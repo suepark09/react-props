@@ -1,12 +1,32 @@
 // Render the tweets using React!
 const App = (props) => {
     let { tweets } = props;
+    const AllTweets = props.tweets.map(Tweet)
     return (
-        <span>tweets</span>
+        <span>{ AllTweets }</span>
     )
 }
 
-const Tweet = null;  // CHALLENGE: Write a separate Tweet component for use in the App component
+// CHALLENGE: Write a separate Tweet component for use in the App component
+const Tweet = (props) => {
+console.log('return tweet prop', props.text)
+    const tweetImg = {
+        user: props.user,
+        text: props.text,
+        likes: props.likes,
+        retweets: props.retweets,
+        replies: props.replies
+    }
+
+    // console.log('teh hell is this', tweetImg)
+
+    return <div className="tweet-container">
+
+        { tweetImg }
+    </div>
+}
+
+
 
 const User = null;  // CHALLENGE: Write a separate User component for use in the Tweet component
 
